@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVORA Restaurant</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">SAVORA</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+           
+<a href="#cart" class="nav-button">
+    🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="subtitle">WELCOME TO SAVORA Restaurant</p>
+
+            <h2>Enjoy Delicious Food Every Day</h2>
+
+            <p>
+                Discover amazing flavors and delicious meals
+                prepared with love and fresh ingredients.
+            </p>
+
+            <a href="#menu" class="main-button">Explore Our Menu</a>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            At SAVORA Restaurant, we believe that great food
+            brings people together. We serve fresh and delicious
+            meals with passion.
+        </p>
+
+    </section>
+
+    <!-- Menu Section -->
+    
+<!-- Menu Section -->
+<section class="menu" id="menu">
+
+    <p class="section-subtitle">DISCOVER OUR MENU</p>
+    <h2>Our Popular Dishes</h2>
+
+    <p class="menu-description">
+        Explore our delicious selection of freshly prepared meals.
+    </p>
+    
+<!-- Menu Search -->
+<div class="menu-search">
+    <input
+        type="text"
+        id="menu-search"
+        placeholder="Search for your favorite food..."
+    >
+</div>
+<!-- Menu Filter Buttons -->
+<div class="menu-filters">
+
+    <button class="filter-btn active" data-filter="all">All</button>
+
+    <button class="filter-btn" data-filter="pizza">Pizza</button>
+
+    <button class="filter-btn" data-filter="burger">Burgers</button>
+
+    <button class="filter-btn" data-filter="pasta">Pasta</button>
+
+</div>
+   
+<div class="menu-container">
+
+    <!-- ================= Pizza ================= -->
+
+    <div class="food-card" data-category="pizza">
+        <img
+    src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/19/pepperoni-slices-on-cheese-pizza-close-up.jpg.rend.hgtvcom.1280.1280.85.suffix/1703015380145.webp"
+    alt="Pepperoni Pizza"
+>
+        <div class="food-info">
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic pizza topped with pepperoni, mozzarella and tomato sauce.</p>
+            <span>$13</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pizza">
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600" alt="Margherita Pizza">
+        <div class="food-info">
+            <h3>Margherita Pizza</h3>
+            <p>Fresh mozzarella, tomato sauce and fragrant basil.</p>
+            <span>$11</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pizza">
+        <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600" alt="BBQ Chicken Pizza">
+        <div class="food-info">
+            <h3>BBQ Chicken Pizza</h3>
+            <p>Grilled chicken, barbecue sauce and melted cheese.</p>
+            <span>$15</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pizza">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Four Cheese Pizza">
+        <div class="food-info">
+            <h3>Four Cheese Pizza</h3>
+            <p>A delicious combination of four rich and creamy cheeses.</p>
+            <span>$14</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ================= Burgers ================= -->
+
+    <div class="food-card" data-category="burger">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Classic Beef Burger">
+        <div class="food-info">
+            <h3>Classic Beef Burger</h3>
+            <p>Juicy beef patty with fresh vegetables and special sauce.</p>
+            <span>$10</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="burger">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Double Cheeseburger">
+        <div class="food-info">
+            <h3>Double Cheeseburger</h3>
+            <p>Two juicy beef patties with double cheese and fresh lettuce.</p>
+            <span>$14</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="burger">
+        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600" alt="Crispy Chicken Burger">
+        <div class="food-info">
+            <h3>Crispy Chicken Burger</h3>
+            <p>Crispy fried chicken with lettuce and creamy mayonnaise.</p>
+            <span>$11</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="burger">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Mushroom Swiss Burger">
+        <div class="food-info">
+            <h3>Mushroom Swiss Burger</h3>
+            <p>Beef burger topped with sautéed mushrooms and Swiss cheese.</p>
+            <span>$13</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ================= Pasta ================= -->
+
+    <div class="food-card" data-category="pasta">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Fettuccine Alfredo">
+        <div class="food-info">
+            <h3>Fettuccine Alfredo</h3>
+            <p>Creamy fettuccine pasta with parmesan cheese and fresh cream.</p>
+            <span>$14</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pasta">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Spaghetti Bolognese">
+        <div class="food-info">
+            <h3>Spaghetti Bolognese</h3>
+            <p>Spaghetti served with rich tomato and minced beef sauce.</p>
+            <span>$13</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pasta">
+        <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600" alt="Penne Arrabbiata">
+        <div class="food-info">
+            <h3>Penne Arrabbiata</h3>
+            <p>Penne pasta with spicy tomato sauce, garlic and herbs.</p>
+            <span>$12</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="food-card" data-category="pasta">
+        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600" alt="Creamy Chicken Pasta">
+        <div class="food-info">
+            <h3>Creamy Chicken Pasta</h3>
+            <p>Tender chicken pieces tossed in a delicious creamy sauce.</p>
+            <span>$15</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+</section>
+<!-- Shopping Cart Section -->
+<section class="cart-section" id="cart">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-total">
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+    </div>
+
+    <button id="checkout-button">
+        Proceed to Checkout
+    </button>
+
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>We would love to hear from you!</p>
+
+        <a href="mailto:hello@SAVORA.com">Email Us</a>
+
+    </section>
+
+    <!-- Back To Top Button -->
+    <button id="back-to-top">↑ Back to Top</button>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+           <span id="year">2026</span>
+            SAVORA Restaurant All Rights Reserved.
+        </p>
+
+    </footer>
+
+   <!-- Toast Notification -->
+<div id="toast"></div>
+
+<!-- Connect JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
